@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12n</title>
+  </head>
+  <body>
+    <script>
+      function removeEgg(foods) {
+        let count = 0;
+        foods.filter((val) => {
+          count += 1;
+          if (val === 'egg' && count == 2) {
+            return;
+          }
+        });
+     }
+      
+    </script>
+  </body>
+</html>

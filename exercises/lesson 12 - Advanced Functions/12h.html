@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12g</title>
+  </head>
+  <body>
+
+    <button class="js-add-button">Add</button>
+
+    <button class="js-remove-button">Remove </button>
+
+    <script>
+      let message = 2;
+     
+     //Update the document title every second 
+     setInterval(() =>{
+      if (document.title === 'App') {
+          
+          document.title = `(${message}) New Message`;
+      } else {
+          document.title = 'App'
+      }
+
+     }, 1000)
+
+     document.querySelector('.js-add-button')
+      .addEventListener('click', () => {
+        message += 1;
+      })
+
+      document.querySelector('.js-remove-button')
+       .addEventListener('click', () => {
+        message -= 1;
+
+       })
+
+   
+
+  
+
+    
+
+    </script>
+  </body>
+  </html> 
+
+
+  <!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>12g</title>
+  </head>
+  <body>
+
+    <button onclick="
+      message += 1;
+      ">Add</button>
+
+    <button onclick="
+      message -= 1;
+    ">
+      Remove
+    </button>
+
+    <script>
+     let message = 2;
+
+     setInterval(() =>{
+      if (document.title === 'App') {
+          document.title = `(${message}) New Message`;
+      } else {
+          document.title = 'App'
+      }
+
+     }, 1000)
+
+    </script>
+  </body>
+  </html>  -->
+
